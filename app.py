@@ -16,6 +16,10 @@ from langchain.chat_models import ChatOpenAI
 from langchain.prompts import PromptTemplate
 from dotenv import load_dotenv
 
+import sys
+__import__('pysqlite3')
+sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
+
 # Load environment variables
 load_dotenv()
 
