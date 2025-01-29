@@ -33,7 +33,6 @@ CHROMA_DB_DIR = "chroma_db"
 embedding = OpenAIEmbeddings(openai_api_key=openai_api_key)
 
 # Load the persisted ChromaDB
-st.info("Loading preprocessed knowledge base...")
 vectordb = Chroma(persist_directory=CHROMA_DB_DIR, embedding_function=embedding)
 
 # Define LLM Model
