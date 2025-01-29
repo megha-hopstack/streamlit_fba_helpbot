@@ -37,7 +37,7 @@ st.info("Loading preprocessed knowledge base...")
 vectordb = Chroma(persist_directory=CHROMA_DB_DIR, embedding_function=embedding)
 
 # Define LLM Model
-llm_name = "gpt-3.5-turbo-16k"
+llm_name = "gpt-4"
 
 # Define Custom QA Prompt
 QA_TEMPLATE = """You are a helpful support bot providing information about Amazon Fulfillment APIs and related PDFs.
@@ -73,7 +73,7 @@ if "chain" not in st.session_state:
 
 # Initialize Chat History
 if "generated" not in st.session_state:
-    st.session_state["generated"] = ["Hello! Ask me anything about Amazon Fulfillment APIs and PDFs."]
+    st.session_state["generated"] = ["Hello! Ask me anything about Fulfillment by Amazon."]
 
 if "past" not in st.session_state:
     st.session_state["past"] = ["Hi!"]
