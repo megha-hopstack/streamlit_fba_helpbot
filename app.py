@@ -27,7 +27,7 @@ load_dotenv()
 openai_api_key = st.secrets["OPENAI_API_KEY"]
 
 # ChromaDB persistence directory
-CHROMA_DB_DIR = "chroma_db"
+CHROMA_DB_DIR = "chromadb"
 
 # Initialize OpenAI Embeddings
 embedding = OpenAIEmbeddings(openai_api_key=openai_api_key)
