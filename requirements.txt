@@ -7,4 +7,3 @@ pypdf
 python-dotenv
 tiktoken
 pysqlite3-binary
-jq
