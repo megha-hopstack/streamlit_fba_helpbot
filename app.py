@@ -39,7 +39,7 @@ vectordb = Chroma(persist_directory=CHROMA_DB_DIR, embedding_function=embedding)
 llm_name = "gpt-4"
 
 # Define Custom QA Prompt
-QA_TEMPLATE = """You are a helpful support bot providing information about Amazon Fulfillment APIs and related PDFs.
+QA_TEMPLATE = """You are a helpful support bot for Hopstack providing information about Fulfillment By Amazon.
 Use only the provided documentation to answer the question.
 Do NOT make up answers—if you are unsure, simply say you don't know.
 
