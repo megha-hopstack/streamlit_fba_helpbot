@@ -6,8 +6,12 @@ Created on Wed Jan 29 15:02:35 2025
 @author: megha
 """
 
-import os
 import streamlit as st
+
+st.error("This app is temporarily down. Please check back later.")
+st.stop()
+
+import os
 from langchain.vectorstores import Chroma
 from langchain.embeddings.openai import OpenAIEmbeddings
 from langchain.memory import ConversationBufferMemory
